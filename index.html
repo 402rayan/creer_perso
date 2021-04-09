@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta charset="UTF-8"/>
+        <title>Créer Personnage</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <input id="copier"type="button" value="Copier" style="background-color: #0b0b0b;;position:fixed;left:2vh;bottom:2vh" onclick="copier()">
+        <div class="conteneur">
+            <div class="finish" style="text-align:center">
+                <code>
+                    <span id="pasta"></span></code>
+            </div>
+            <div class="visualizer"></div>
+            <div class="Titre">CRÉATION</div>
+            <div class="parameters">
+                <div class="NOMS">
+                    <div class="input_site">
+                        <img src="https://i.imgur.com/d9121xl.png"/>
+                        <input id="input_nom_fr" type="text" placeholder="Nom français" value="" onkeyup="changer_nom_fr()">
+                    </div>
+                    <div class="input_site">
+                        <img src="https://i.imgur.com/d9121xl.png"/>
+                        <input id="input_nom_eng" type="text" placeholder="Nom anglais" value="" onkeyup="changer_nom_eng()" >
+                    </div>
+                </div>
+                <div class="RARETE">
+                    <div class="eternal"><h2>eternal</h2></div>
+                    <div class="mythical"><h2>mythical</h2></div>
+                    <div class="legendary"><h2>legendary</h2></div>
+                    <div class="epic"><h2>epic</h2></div>
+                    <div class="rare"><h2>rare</h2></div>
+                    <div class="common"><h2>common</h2></div>
+                </div>
+                <div class="IMAGES" style="padding-top:7vh;">
+                    <div class="input_site im">
+                        <img src="https://oddlydesign.files.wordpress.com/2018/11/3.png"/>
+                        <input id="identifiant" type="number" placeholder="Identifiant" value="601" min="600" onkeyup="actualiser_variable_perso()">
+                    </div>
+                    <div class="input_site im" style="padding-left:2vw;background-color:rgb(71, 20, 20);">
+                        <input id="reset" type="button"  value="RESET">
+                    </div>
+                    
+                </div>
+                <div class="UNIVERS">
+                    <div class="input_site uni">
+                        <img src="https://i.imgur.com/IAJQub7.png"/>
+                        <input id="input_univers" type="text" placeholder="Univers" value="" onkeyup="changer_univers()">
+                    </div>
+                </div>
+                <div class="STATS">
+                    <div class="input_site stat">
+                        <img src="https://i.imgur.com/8tpTzum.png"/>
+                        <input id="input_hp" type="number" placeholder="HP" value="" onkeyup="changer_stats()">
+                    </div>
+                    <div class="input_site stat">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/sword-1777408-1512000.png"/>
+                        <input id="input_atk" type="number" placeholder="ATK" value="" onkeyup="changer_stats()">
+                    </div>
+                    <div class="input_site stat">
+                        <img src="https://i.imgur.com/JnkbBFX.png"/>
+                        <input id="input_atks" type="number" placeholder="ATKS" value="" onkeyup="changer_stats()">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="sc.js"></script>
+    </body>
+</html>
